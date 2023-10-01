@@ -11087,8 +11087,8 @@ header.masthead .masthead-heading {
 }
 .timeline > li {
   position: relative;
-  min-height: 50px;
-  margin-bottom: 50px;
+  min-height: 40px;
+  margin-bottom: 40px;
 }
 .timeline > li:after, .timeline > li:before {
   display: table;
@@ -11130,7 +11130,7 @@ header.masthead .masthead-heading {
   background-color: #ffc800;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
-  font-size: 10px;
+  font-size: 40px;
   line-height: 14px;
   margin-top: 12px;
 }
@@ -11199,14 +11199,14 @@ header.masthead .masthead-heading {
 }
 @media (min-width: 992px) {
   .timeline > li {
-    min-height: 150px;
+    min-height: 130px;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     margin-left: -75px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
@@ -11220,14 +11220,14 @@ header.masthead .masthead-heading {
 }
 @media (min-width: 1200px) {
   .timeline > li {
-    min-height: 170px;
+    min-height: 150px;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
   .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     margin-left: -85px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
@@ -11309,8 +11309,32 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+
+
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  border: 5px solid #e9ecef;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  font-weight: bold;
+  background-color: #0073e6;
+}
+
+
+.border-step{
+  border-bottom: 5px solid #4d4d4d;
+  border-right: 5px solid #4d4d4d;
 }

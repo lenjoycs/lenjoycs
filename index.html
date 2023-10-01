@@ -14,9 +14,22 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-
+        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+        <!-- icons -->
+        <script src="https://kit.fontawesome.com/4de69d967a.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Set title of page -->
+        <!-- <script src="js/app.js?ver=2"></script>   -->
+
+        <script>
+            var timestamp = new Date().getTime();
+            var cssUrl = "css/styles.css?v=" + timestamp;
+            document.write('<link rel="stylesheet" href="' + cssUrl + '">');
+
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'js/app.js?ver=' + new Date().getTime();
+            document.head.appendChild(scriptElement);
+          </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -30,12 +43,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link " href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link " href="#pservices">Personal Services</a></li>
-                        <li class="nav-item"><a class="nav-link " href="#cservices">Commercial Services</a></li>
-                        <li class="nav-item"><a class="nav-link " href="#oservices">Other Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link svc-text" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link psvc-text" href="#pservices">Personal Services</a></li>
+                        <li class="nav-item"><a class="nav-link csvc-text" href="#cservices">Commercial Services</a></li>
+                        <li class="nav-item"><a class="nav-link osvc-text" href="#oservices">Other Services</a></li>
+                        <li class="nav-item"><a class="nav-link about-text" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link contact-text" href="#contact_custom">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,9 +56,10 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">新加坡专属管家</div>
-                <div class="masthead-subheading text-uppercase">YOUR EXCLUSIVE PARTNER IN SINGAPORE</div>
+                <div class="masthead-subheading row" style="color: #66ccff;"><div class="col"></div><div class="col-2">专注</div><div class="col-2">品质</div><div class="col-2">诚信</div><div class="col"></div></div>
+                <div class="masthead-heading text-uppercase gradient-text-header" style="color: #0077b3;">新加坡专属管家</div>
+                <div class="masthead-subheading text-uppercase" style="color: #999999;">YOUR EXCLUSIVE PARTNER IN SINGAPORE</div>
+                <div class="masthead-subheading text-uppercase" style="color: #808080;font-size: 1.2rem;">新加坡移⺠置业 企业出海 ⼀站式服务</div>
                 <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a> -->
             </div>
         </header>
@@ -53,48 +67,443 @@
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase" style="color: #0077b3;">我们的服务</h2>
+                    <h3 class="section-subheading text-uppercase text-muted">OUR SERVICES</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <div class="col-lg-2 col-md-0"></div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="my-3"><span >&#10003;</span>移民留学</h4>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="my-3"><span >&#10003;</span>财务规划</h4>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-2 col-md-0"></div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="my-3"><span >&#10003;</span>公司设立</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="my-3"><span >&#10003;</span>生活服务</h4>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-2 col-md-0"></div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="my-3"><span >&#10003;</span>营销服务</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="my-3"><span >&#10003;</span>市场顾问</h4>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- services continue -->
+        <section class="page-section">
+            <div class="container text-center">
+                <div>
+                    <h3>移⺠新加坡的优势</h3>
+                </div>
+                <div>
+                    <p class="my-3"><span >&#10003;</span>丰富的教育资源</p>
+                </div>
+                <div>
+                    <p class="my-3"><span >&#10003;</span>先进的医疗⽔平</p>
+                </div>
+                <div>
+                    <p class="my-3"><span >&#10003;</span>宜居的环境</p>
+                </div>
+                <div>
+                    <p class="my-3"><span >&#10003;</span>低税收</p>
+                </div>
+                <div>
+                    <p class="my-3"><span >&#10003;</span>多元化的发展</p>
+                </div>
+                <div>
+                    <p class="my-3"><span >&#10003;</span>流程清晰、周期短</p>
+                </div>
+            </div>
+        </section>
+        <!-- services continue -->
+        <section class="page-section">
+            <div class="container text-center">
+                <div>
+                    <h3>新加坡移⺠8⼤类别</h3>
+                </div>
+                <div>
+                    <p class="my-3"><span style="font-size: 18x;">&#9679;</span> 全球商业投资者计划 (GIP)</p>
+                </div>
+                <div>
+                    <p class="my-3"><span style="font-size: 18x;">&#9679;</span> 海外艺术⼈才移⺠</p>
+                </div>
+                <div>
+                    <p class="my-3"><span style="font-size: 18x;">&#9679;</span> 科技准证</p>
+                </div>
+                <div>
+                    <p class="my-3"><span style="font-size: 18x;">&#9679;</span> 家族办公室移⺠</p>
+                </div>
+                <div>
+                    <p class="my-3"><span style="font-size: 18x;">&#9679;</span> 创业移⺠</p>
+                </div>
+                <div>
+                    <p class="my-3"><span style="font-size: 18x;">&#9679;</span> ⾃雇移⺠</p>
+                </div>
+                <div>
+                    <p class="my-3"><span style="font-size: 18x;">&#9679;</span> 个⼈就业移⺠</p>
+                </div>
+                <div>
+                    <p class="my-3"><span style="font-size: 18x;">&#9679;</span> 雇主担保移⺠</p>
+                </div>
+            </div>
+        </section>
+        <!-- Personal Services -->
+        <section class="page-section" id="pservices">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="color: #0077b3;">个人服务</h2>
+                    <h3 class="section-subheading text-uppercase text-muted">PERSONAL SERVICES</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image" style="background-color: #0073e6;">
+                            <!-- <div style="font-size: 40px;text-align: center; vertical-align: middle;">1</div> -->
+                            <span style="font-size: 40px;">&#49;</span>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>了解需求</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" style="background-color: #005c99;">
+                            <!-- <div style="font-size: 40px;padding-top: 5px;">2</div> -->
+                            <span style="font-size: 40px;">&#50;</span>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>签署合约<br/>
+                                    制定专属⽅案</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image" style="background-color: #0073e6;">
+                            <!-- <div style="font-size: 40px;padding-top: 5px;">3</div> -->
+                            <span style="font-size: 40px;">&#51;</span>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>沟通与反馈</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" style="background-color: #005c99;">
+                            <!-- <div style="font-size: 40px;padding-top: 5px;">4</div> -->
+                            <span style="font-size: 40px;">&#52;</span>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>提交资料</h4>
+                                <p>过程中可能需要补充材料</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image" style="background-color: #0073e6;">
+                            <!-- <div style="font-size: 40px;padding-top: 5px;">5</div> -->
+                            <span style="font-size: 40px;">&#53;</span>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>服务落地</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- personal services continue -->
+        <section class="page-section">
+            <div class="container text-center">
+                <div>
+                    <h3>家族办公室 FAMILY OFFICE</h3>
+                    <h5>为⾼净值的客户提供⼀站式家族事务解决⽅案</h5>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div style="padding-top: 40px;">
+                            <div class="circle" style="width: 100px;height: 100px;padding-top: 5px;background-color: #0073e6;">投资<br/>服务</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <br/>
+                        <ul>
+                            <li>债券</li>
+                            <li>基⾦</li>
+                            <li>股票</li>
+                            <li>保险</li>
+                            <li>PE/VC</li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <div style="padding-top: 40px;">
+                            <div class="circle" style="width: 100px;height: 100px;padding-top: 5px;background-color: #005c99;">家族<br/>事务</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <br/>
+                        <ul>
+                            <li>身份规划</li>
+                            <li>家庭⻛险</li>
+                            <li>税务筹划</li>
+                            <li>财务规划</li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <div style="padding-top: 40px;">
+                            <div class="circle" style="width: 100px;height: 100px;padding-top: 5px;background-color: #0073e6;">增值<br/>服务</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <br/>
+                        <ul>
+                            <li>⼦⼥教育</li>
+                            <li>海外就医</li>
+                            <li>海外⽣活</li>
+                            <li>⾼端保养</li>
+                            <li>公益慈善</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- personal services continue -->
+        <section class="page-section">
+            <div class="container text-center">
+                <div>
+                    <h3>⾃雇移⺠ Self - employment Pass</h3>
+                    <p>通过在新加坡注册公司，并通过⾃雇的形式获得新加
+                        坡的EP⼯作签证，并管理运营该企业，从⽽申请移⺠。</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 text-start" style="border-right: 3px solid #6c757d;">
+                        <div>
+                            <h6 class="my-3"><span style="font-size: 18x;">&#9826;</span> ⻔槛宽松</h6>
+                        </div>
+                        <div>
+                            <h6 class="my-3"><span style="font-size: 18x;">&#9826;</span> 周期快</h6>
+                        </div>
+                        <div>
+                            <h6 class="my-3"><span style="font-size: 18x;">&#9826;</span> 成本低</h6>
+                        </div>
+                        <div>
+                            <h6 class="my-3"><span style="font-size: 18x;">&#9826;</span> ⼀⼈申请 全家移⺠</h6>
+                        </div>
+
+                        <div style="padding-top: 10px;">
+                            <h6 class="my-3">申请要求</h6>
+                        </div>
+
+                        <div>
+                            <p class="my-3"><span style="padding-right: 20px;">1.</span> 25-60岁之间</p>
+                        </div>
+                        <div>
+                            <p class="my-3"><span style="padding-right: 20px;">2.</span> 拥有⼤专及以上学历</p>
+                        </div>
+                        <div>
+                            <p class="my-3"><span style="padding-right: 20px;">3.</span> 在新加坡注册公司并担任⾼管</p>
+                        </div>
+                        <div>
+                            <p class="my-3"><span style="padding-right: 20px;">4.</span> 公司有实际经营的地址及业务</p>
+                        </div>
+                        <div>
+                            <p class="my-3"><span style="padding-right: 20px;">5.</span> 公司有聘⽤本地员⼯</p>
+                        </div>
+                       
+                    </div>
+
+                    <div class="col-6 text-start">
+                        <h5>案例分享</h5>
+                        <h6>王先⽣，35岁，国内本科毕业
+                            公司创始⼈，运营公司5年+
+                            <br/>⼥⼉8岁</h6>
+                        <br/>
+                        <p>需求：全家移⺠，并计划将公司业
+                            务重⼼转⾄东南亚，⼥⼉申请国际
+                            学校。<br/>
+                            时间节点：<br/>
+                            2022.3 开始沟通并注册新加坡公司<br/>
+                            2022.9.5 开始递交EP申请材料<br/>
+                            2022.9.16 收到补交材料通知<br/>
+                            2022.10.10 收到批准邮件</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- personal services continue -->
+        <section class="page-section">
+            <div class="container text-center">
+                <div>
+                    <h3>子女教育</h3>
+                </div>
+
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col-6 text-start" style="border-right: 3px solid #6c757d;">
+                        <div class="my-3 row">
+                            <div class="circle col-2" style="padding-right: 10px;">1</div>
+                            <div class="col"><h6>⼦⼥留学申请</h6><p style="font-size: 13px;">从幼⼉园⾄中学（3岁以上），我们与多家新加坡
+                                国际学校⻓期合作，为您提供学校申请服务。</p></div>
+                        </div>
+                        <div class="my-3 row">
+                            <div class="circle col-2" style="padding-right: 10px;">2</div>
+                            <div class="col"><h6>住宿</h6><p style="font-size: 13px;">为您安排寄宿家庭、学⽣公寓或房屋租赁服务
+                                也可以为您提供购买本地房屋的服务</p></div>
+                        </div>
+                        <div class="my-3 row">
+                            <div class="circle col-2" style="padding-right: 10px;">3</div>
+                            <div class="col"><h6>签证</h6><p style="font-size: 13px;">⼦⼥申请留学成功后，⺟亲可申请陪读签证。</p></div>
+                        </div>                       
+                    </div>
+
+                    <div class="col-6 text-start">
+                        <h5>案例分享</h5>
+                        <h6>刘⼥⼠，30岁，孩⼦4岁</h6>
+                        <br/>
+                        <p>需求：希望给孩⼦提供更加国际化
+                            的教育环境，申请新加坡国际幼⼉
+                            园。其丈夫因⼯作原因暂时留在国
+                            内。<br/>
+                            时间节点：<br/>
+                            2021.6 开始选择幼⼉园<br/>
+                            2021.7 开始递交申请材料<br/>
+                            2021.9 签证批准<br/>
+                            现已在新加坡⽣活，并通过我们的
+                            推荐购置公寓</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Commercial Services -->
+        <section class="page-section" id="cservices">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="color: #0077b3;">企业服务</h2>
+                    <h3 class="section-subheading text-uppercase text-muted">以伙伴的身份，提供更专业、更全⾯的服务，助⼒企业出海</h3>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h5 style="color: #005c99;">新加坡公司发展</h5>
+                        <p>公司业务本⼟化服务、商务对接、会计及法律服务等。</p>
+                    </div>
+                    <div class="col-6 text-end row">
+                        <div class="col-8"></div>
+                        <div class="col-4 border-step">
+                            <div class="circle" style="width: 90px;height: 90px;padding-top: 5px;background-color: #999999;">后期<br/>发展</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h5 style="color: #005c99;">新加坡公司设⽴</h5>
+                        <p>公司注册、办公选址、财务规划、⼈⼒资源匹
+                            配等全⽅位服务，助您顺利进⼊新加坡市场。</p>
+                    </div>
+                    <div class="col-6 text-end row">
+                        <div class="col-4"></div>
+                        <div class="col-4 border-step">
+                            <div class="circle" style="width: 90px;height: 90px;padding-top: 5px;background-color:#0073e6;">公司<br/>设立</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h5 style="color: #005c99;">前期市场调研</h5>
+                        <p>根据您公司所处的⾏业，提供新加
+                            坡市场的调研服务，为您企业出海
+                            做好前期准备。</p>
+                    </div>
+                    <div class="col-6 text-end row">
+                        <div class="col-4 border-step">
+                            <div class="circle" style="width: 90px;height: 90px;padding-top: 5px;background-color:#005c99;">前期<br/>准备</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Commercial Services continue -->
+        <section class="page-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="color: #0077b3;">案例分享</h2>
+                    <h3 class="section-subheading text-uppercase text-muted">客户为国内某知名连锁餐饮企业
+                        2020年开始计划在新加坡开店</h3>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="circle" style="width: 90px;height: 90px;padding-top: 5px;background-color: #005c99;"><i class="mdi mdi-account-switch"></i></div>
+                        </div>
+                        <div class="col-8">
+                            <h5>前期准备</h5>
+                            <p>我们与新加坡本地的调研公司合作，为其提供详细的⾏业分析，
+                                提供财务及合规⽅案。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="circle" style="width: 90px;height: 90px;padding-top: 5px;background-color: #0073e6;"></div>
+                        </div>
+                        <div class="col-8">
+                            <h5>实际操作</h5>
+                            <p>为其在新加坡注册公司，并选定了办公及开店的地址。与本地猎
+                                头公司合作招聘员⼯。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="circle" style="width: 90px;height: 90px;padding-top: 5px;background-color: #005c99;"></div>
+                        </div>
+                        <div class="col-8">
+                            <h5>成功落地</h5>
+                            <p>现已在新加坡开了第⼀家店⾯，我们正持续为其提供本⼟化的服
+                                务。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Other Services -->
+        <section class="page-section" id="oservices">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="color: #0077b3;">我们也可为您提供：</h2>
+                </div>
+                <div class="text-center"><u>短期商务服务</u><p>⼊境政策指导<br/>签证申请服务<br/>市场考察接待<br/>短期公寓租赁</p></div>
+                <div class="text-center"><u>⽣活服务</u><p>保险理财<br/>汽⻋租赁及购买<br/>管家服务</p></div>
+            </div>
+        </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <!-- <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4"> -->
                         <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
+                        <!-- <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -107,9 +516,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4"> -->
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
+                        <!-- <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -122,9 +531,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4"> -->
                         <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
+                        <!-- <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -137,9 +546,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0"> -->
                         <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
+                        <!-- <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -152,9 +561,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0"> -->
                         <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
+                        <!-- <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -167,9 +576,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6"> -->
                         <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
+                        <!-- <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -184,15 +593,22 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase about-text">About</h2>
+                    <h3 class="section-subheading text-uppercase text-muted">LENJOY 乐享 – 您的新加坡专属管家</h3>
                 </div>
-                <ul class="timeline">
+                <div class="text-center">
+                    <div style="border:3px outset#008ae6;border-radius: 5%;padding: 15px;">专注于为⾼净值⼈群提供全⽅位的定制化服务：<br/>个⼈／家庭移⺠置业、财务规划、商务
+                        对接、⽣活服务、私⼈助理等服务。
+                        <br/>为企业出海提供市场调研、办公选址、税务
+                        规划、法律顾问、本⼟化等专业服务。
+                        <br/>助您⽆忧转战新加坡！</div>
+                </div>
+                <!-- <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
                         <div class="timeline-panel">
@@ -244,11 +660,35 @@
                             </h4>
                         </div>
                     </li>
-                </ul>
+                </ul> -->
+            </div>
+        </section>
+
+        <!-- Contact-->
+        <section class="page-section" id="contact_custom">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase contact-text">Contact</h2>
+                    <h3 class="section-subheading text-uppercase text-muted">LENJOY 乐享 – 您的新加坡专属管家</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6 text-center" style="border: 3px outset #0077b3;border-radius: 5%;">
+                        <p>严婧毓 Joy</p>
+                        <p>WeChat: Joy2020hsp</p>
+                        <p>Mobile: +65 8571 4865</p>
+                        <p>Email: joyyan_lenjoy@outlook.com</p>
+                    </div>
+                    <div class="col-6 text-center" style="border: 3px outset #0077b3;border-radius: 5%;">
+                        <p>张枫岳 Loren</p>
+                        <p>WeChat: Lorenyue</p>
+                        <p>Mobile: +65 8319 8808</p>
+                        <p>Email: loren_lenjoy@outlook.com</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+        <!-- <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
@@ -290,9 +730,9 @@
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Clients-->
-        <div class="py-5">
+        <!-- <div class="py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
@@ -309,73 +749,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
-            </div>
-        </section>
+        </div> -->
         <!-- Footer-->
-        <footer class="footer py-4">
+        <!-- <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
@@ -390,7 +766,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -612,8 +988,7 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
 
-        <!-- Set title of page -->
-        <script src="js/app.js"></script>  
+        
         
     </body>
 </html>
